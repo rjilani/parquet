@@ -1,0 +1,8 @@
+**/__pycache__/**
+.idea/**
+pynistaller.txt
+covid/**
+Pak_Temp/**
+doctors_data/**
+*.csv
+*.parquet
