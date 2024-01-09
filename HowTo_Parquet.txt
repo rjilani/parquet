@@ -1,0 +1,8 @@
+CREATE TABLE doctordb AS select * from 'C:\Users\home\Documents\Projects\PythonProject\parquet\DAC_National_doctors.csv';
+
+
+
+
+COPY (SELECT *
+	    FROM read_csv('C:\Users\home\Documents\Projects\PythonProject\parquet\DAC_National_doctors.csv',AUTO_DETECT=TRUE))
+  TO 'C:\Users\rjilani\Documents\Projects\PythonProject\parquet\DAC_National_doctors.parquet' (FORMAT 'PARQUET', CODEC 'ZSTD');
